@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Matemasie&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+
+:root {
+	--corPrimaria: #ffffff;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: grid;
+	place-items: center;
+	height: 100%;
+}
+
+body {
+	background-image: url("https://images.pexels.com/photos/755726/pexels-photo-755726.jpeg?auto=compress&cs=tinysrgb&w=3000&h=2550&dpr=1");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	background-color: var();
+	width: 100%;
+	height: auto;
+}
+
+#name {
+	color: var(--corPrimaria);
+	font-size: 8em;
+	animation-name: animNome;
+	animation-duration: 4s;
+	font-family: "VT323", monospace;
+	font-weight: 800;
+	font-style: normal;
+	cursor: pointer;
+	transition: 5s;
+}
+
+#name:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgba(32, 8, 105, 0.976);
+}
+
+@keyframes animNome {
+	from {
+		margin-left: 20rem;
+	}
+	to {
+		margin-left: 0rem;
+	}
+}
+
+.index {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 2rem;
+	animation-name: animIndex;
+	animation-duration: 2s;
+	color: #ffffffe5;
+
+	font-family: "VT323", monospace;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+@keyframes animIndex {
+	from {
+		margin-right: 20rem;
+	}
+	to {
+		margin-right: 0rem;
+	}
+}
+
+.index div {
+	cursor: pointer;
+}
+
+.index div:hover {
+	animation-name: teste;
+	animation-duration: 2s;
+}
+
+@keyframes teste {
+	from {
+		border-bottom: 2px rgb(255, 255, 255) solid;
+	}
+
+	to {
+		border-bottom: 2px rgb(69, 17, 167) solid;
+		transition: 2s;
+	}
+}
+
+.container {
+	background-color: var();
+	max-width: 60vw;
+	margin-top: 15px;
+	border-radius: 10px;
+	flex-wrap: wrap;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	border-radius: 15px;
+}
+
+.icone1 {
+	width: 150px;
+	position: relative;
+	right: 40vw;
+	animation: item1 2s linear infinite;
+}
+
+@keyframes item1 {
+	0% {
+		top: 0px;
+	}
+	25% {
+		top: 20px;
+	}
+	50% {
+		top: 40px;
+	}
+	100% {
+		top: 0px;
+	}
+}
+
+.icone2 {
+	width: 120px;
+	position: relative;
+	bottom: 20vw;
+	left: 40vw;
+	animation: icone2 2s linear infinite;
+}
+
+@keyframes icone2 {
+	0% {
+		transform: translateX(20px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.icone3 {
+	width: 120px;
+	position: relative;
+	bottom: 15vh;
+	left: 40vw;
+}
+
+.inicio {
+	display: flex;
+	align-items: center;
+	color: white;
+	gap: 15px;
+	background-image: linear-gradient(
+		to left,
+		rgba(37, 2, 43, 0.185),
+		transparent
+	);
+}
+
+.fontDev {
+	font-family: "VT323", monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 5em;
+	color: rgb(255, 255, 255);
+	animation-name: skills;
+	animation-duration: 1s;
+}
+
+@keyframes skills {
+	from {
+		margin-right: 20rem;
+	}
+	to {
+		margin-right: 0rem;
+	}
+}
+
+.divFontDev {
+	padding: 10px;
+}
+.skills {
+	display: flex;
+	margin-top: 8px;
+	justify-content: center;
+}
+
+a .btnCurriculo {
+	background-color: rgba(225, 168, 229, 0.918);
+	border: none;
+	padding: 0.85rem;
+	color: white;
+	cursor: pointer;
+	transition: 2s;
+	border-radius: 5px;
+}
+
+a .btnCurriculo:hover {
+	background-image: linear-gradient(
+		rgba(225, 168, 229, 0.918),
+		rgba(207, 168, 229, 0.918)
+	);
+}
+
+/*--------------------------------------------*/
+
+/*CSS DE SOBRE MIM*/
+
+.sobreMim {
+	padding: 30px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.sobreMim h2 {
+	color: var(--corPrimaria);
+}
+
+.divMeio {
+	max-width: 60%;
+}
+
+.sobreMim p {
+	margin: 10px 0;
+	color: white;
+	text-align: justify;
+}
+
+.redesSociais {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.redesSociais a {
+	text-decoration: none;
+	color: var(--corPrimaria);
+	border-radius: 10px;
+	padding: 15px;
+	width: 100%;
+	margin: 0.8rem 2rem;
+	border: solid 2px white;
+}
+
+.redesSociais a:hover {
+	animation: links;
+	animation-duration: 3s;
+}
+
+@keyframes links {
+	from {
+		padding: 10px;
+	}
+	to {
+		padding: 20px 40px;
+	}
+}
+
+/*--------------------------------------------*/
+
+/* CSS EXPERIÊNCIA */
+
+.experiencia {
+	padding: 60px;
+	display: flex;
+	/* flex-wrap: wrap;	 */
+}
+
+.experianciaLadoA {
+	border-right: 2px white solid;
+	padding-right: 0.8rem;
+	padding: 3px 10px;
+}
+
+.experianciaLadoA h2 {
+	margin-bottom: 0.5rem;
+	color: #ffffff;
+}
+.mesExperiencia {
+	font-size: small;
+	margin-top: 5px;
+}
+
+.dataExperiencia {
+	font-size: 0.9em;
+}
+
+.Cargo {
+	margin: 6px 0px;
+	color: var(--corPrimaria);
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+.Empresa {
+	margin-top: 2px;
+}
+
+.esperienciaLadoB {
+	color: #ffffff;
+	margin: 0px 15px;
+	text-align: justify;
+}
+
+.esperienciaLadoB h3 {
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+/*--------------------------------------------*/
+
+/* CSS FORMAÇÃO */
+
+.formacao {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #ffffff;
+	padding: 30px;
+	gap: 10px;
+	background-color: var();
+}
+
+.formacao img {
+	max-width: 120px;
+	margin-bottom: 10px;
+	padding: 0px 25px 0px 0px;
+}
+
+.formacaoCursos {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+#unasp {
+	width: 60px;
+}
+
+.formacao .nome {
+}
+
+.formacao .nome {
+}
+
+.formacao .duracao {
+}
+
+/* ---------------projetos*-------------------------*/
+
+.projetos {
+	display: flex;
+	flex-wrap: wrap;
+}
+/* From Uiverse.io by adamgiebl */
+
+.card {
+	width: 190px;
+	height: 254px;
+	border-radius: 20px;
+	padding: 5px;
+	transition: 6s;
+	cursor: pointer;
+}
+
+.card__content {
+	background: rgb(0, 0, 0);
+	border-radius: 17px;
+	width: 100%;
+	height: 100%;
+	display: grid; /*centralizar mensagem*/
+	place-items: center; /*centralizar mensagem*/
+	transition: 2s;
+}
+
+.card:hover {
+	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+	background-image: linear-gradient(144deg, #221390, #4d40a0 50%, #630b9a);
+}
+
+.card__content p {
+	color: #3f2796;
+	font-size: 1em;
+}
+
+@media (max-width: 768px) {
+	.index {
+		gap: 10px;
+		margin: 25px 0px;
+	}
+
+	.container {
+		flex-direction: column;
+		min-width: 90vw;
+	}
+
+	.sobreMim,
+	.experiencia,
+	.inicio {
+		flex-direction: column;
+	}
+
+	#imgPrincipal {
+		display: none;
+	}
+
+	a .btnCurriculo {
+		padding: 0.67rem;
+	}
+	.divMeio {
+		max-width: 100vw;
+	}
+
+	.redesSociais a {
+		margin: 0;
+		margin: 10px 0px;
+	}
+
+	.experiencia {
+		padding: 60px 4px;
+		gap: 10px;
+	}
+
+	.formacao {
+		display: flex;
+		flex-direction: column;
+	}
+	.projetos {
+		display: flex;
+		justify-content: center;
+	}
+
+	.icone1 {
+		top: 10vh;
+		right: 20vw;
+	}
+
+	.icone2,
+	.icone3 {
+		display: none;
+	}
+
+	#name {
+		background-color: #ffffff;
+		color: rgb(38, 15, 58);
+	}
+}
+
+.inicio{
+	gap: 0px !important;
+}
