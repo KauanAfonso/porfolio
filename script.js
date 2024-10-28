@@ -34,7 +34,7 @@ btnAbout.addEventListener("click", () => {
 							<div class="redesSociais">
 								<a href="https://br.linkedin.com/in/kauan-afonso-0452a5295">Linkedin</a>
 								<a href="https://github.com/KauanAfonso/">Github</a>
-								<a href="https://kauanafonso.github.io/Curriculo/">Curriculo</a>
+								<a href="https://api.whatsapp.com/send/?phone=5519982031917">WhatsApp</a>
 						</div>	
 				</div>
 				</div>`;
