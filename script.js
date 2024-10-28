@@ -116,7 +116,7 @@ bntName.addEventListener('click', () =>{
 							 </div>
 						</div>
 						<div>
-							<img src="https://cdn.pixabay.com/photo/2024/08/20/22/43/ai-generated-8984558_640.png" alt="" width="300px" style="border-radius: 0%;">
+							<img id='imgPrincipal' src="https://cdn.pixabay.com/photo/2024/08/20/22/43/ai-generated-8984558_640.png" alt="" width="300px" style="border-radius: 0%;">
 						</div>
 
 						<img src="" alt="">
